@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + 'bg-white'} style={{
+        background: "url('/battle.png')",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '100% 60%'
+      }}>{children}</body>
     </html>
   )
 }
